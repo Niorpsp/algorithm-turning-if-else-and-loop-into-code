@@ -6,7 +6,25 @@
 */
 
 // Start coding here
-
+function countNumbers(numbers){
+    let positive = 0;
+    let negative = 0;
+    let zero = 0;
+for (let i of numbers){
+    if (i > 0) {
+        positive++;
+    } else if (i < 0) {
+        negative++;
+    } else {
+        zero++;
+    }
+}
+return {
+    positive,
+    negative,
+    zero,
+};
+}
 const numbers1 = [3, -5, 0, 12, -7, 0, 8, 0, 1];
 console.log(countNumbers(numbers1)); // { positive: 4, negative: 2, zero: 3 }
 
